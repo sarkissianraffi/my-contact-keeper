@@ -1,1 +1,1 @@
-# my-contact-keeper
+# contact-keeper
