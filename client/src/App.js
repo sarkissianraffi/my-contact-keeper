@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import PrivateRoot from './component/rooting/PrivateRoot';
 
 import './App.css';
 
@@ -32,7 +33,7 @@ const App = () => {
               <div className='container'>
                 <Alert />
                 <Switch>
-                  <Route exact path='/' component={Home} />
+                  <PrivateRoot exact path='/' component={Home} />
                   <Route exact path='/about' component={About} />
                   <Route exact path='/register' component={Register} />
                   <Route exact path='/login' component={Login} />
